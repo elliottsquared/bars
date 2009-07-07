@@ -1,0 +1,19 @@
+<table border="1">
+<tr>
+  <td><b>Bar:</b></td>
+  <td><%=h @deal.bar_id %></td>
+</tr>
+
+<tr>
+  <td><b>Bar Name:</b></td>
+  <td><%=h @deal.barname %></td>
+</tr>
+
+<tr>
+  <td><b>Body:</b></td>
+  <td><%=h @deal.body %></td>
+</tr>
+</table>
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Back', deals_path %>

@@ -1,0 +1,33 @@
+<table border="1">
+<tr>
+  <td><b>Name:</b></td>
+  <td><%=h @bar.name %></td>
+</tr>
+<tr>
+  <td><b>Address1:</b></td>
+  <td><%=h @bar.address1 %></td>
+</tr>
+
+<tr>
+  <td><b>Address2:</b></td>
+  <td><%=h @bar.address2 %></td>
+</tr>
+
+<tr>
+  <td><b>City:</b></td>
+  <td><%=h @bar.city %></td>
+</tr>
+
+<tr>
+  <td><b>State:</b></td>
+  <td><%=h @bar.state %></td>
+</tr>
+
+<tr>
+  <td><b>Zip:</b></td>
+  <td><%=h @bar.zip %></td>
+</tr>
+</table>
+
+<%= link_to 'Edit', edit_bar_path(@bar) %> |
+<%= link_to 'Back', bars_path %>

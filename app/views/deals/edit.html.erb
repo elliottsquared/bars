@@ -1,0 +1,24 @@
+<h1>Editing deal</h1>
+
+<% form_for(@deal) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bar_id %><br />
+    <%= f.text_field :bar_id %>
+  </p>
+  <p>
+    <%= f.label :barname %><br />
+    <%= f.text_field :barname %>
+  </p>
+  <p>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @deal %> |
+<%= link_to 'Back', deals_path %>
